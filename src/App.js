@@ -1,8 +1,8 @@
 import React, { Component } from 'react';
-import { Navbar, NavbarBrand } from 'reactstrap';
 import './App.css';
+import {Navbar, NavbarBrand} from 'reactstrap';
 import Directory from './components/DirectoyComponent';
-import { CAMPSITES } from './shared/campsites';
+import { CAMPSITES } from './shared/campsites'
 
 
 class App extends Component {
@@ -12,21 +12,19 @@ class App extends Component {
             campsites: CAMPSITES
         };
     }
-  render() {
-      return (
-          <div className="App">
-              <Navbar dark color="primary">
-              <div className="container">
-                  <NavbarBrand href="/">NuCamp</NavbarBrand>
-              </div>
-              </Navbar>
-              <Directory campsites={this.state.campsites} />
-          </div>
-          
-      );
-  }
+
+    render() {
+        return (
+            <div className="App">
+                <Navbar dark color="primary">
+                <div>
+                    <NavbarBrand href="/">NuCamp</NavbarBrand>
+                </div>
+                </Navbar>
+                <Directory campsites={this.state.campsites}/>
+            </div>
+        );
+    }
 }
 
-
 export default App;
-
