@@ -11,7 +11,7 @@ export const ConfigureStore = () => {
             campsites: Campsites,
             comments: Comments,
             partners: Partners,
-            promtions: Promotions
+            promotions: Promotions
         })
     );
 
